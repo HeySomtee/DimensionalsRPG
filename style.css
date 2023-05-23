@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body{
+    margin: 0%;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* background-color: #000; */
+    background-color: linear-gradient(180deg, rgba(243, 45, 253, 0.822) 0%, rgba(34, 192, 195, 0.733) 100%);
+    font-family: 'Oswald', sans-serif;
+    width: 10vw;
+    
+}
+
+.forMobile{
+    display: none;
+}
+
+#root{
+    position: absolute;
+    background: linear-gradient(180deg, rgba(243, 45, 253, 0.822) 0%, rgba(34, 192, 195, 0.733) 100%);
+    /* background-color: #00000000; */
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#header{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    animation: 2s forwards;
+    z-index: 1;
+    
+}
+
+
+.logo{
+    width: 50vw;
+    animation: 2s forwards;
+    
+}
+
+.main{
+    display: flex;
+    width: 170vw;
+    /* border: 1px solid blue; */
+    z-index: -1;
+    position: absolute;
+    
+    
+}
+
+@keyframes resize{
+    from{
+        width: 50vw;
+
+    }
+    to{
+        width: 30vw;
+    }
+}
+
+#start{
+    width: 50vw;
+    height: 5vh;
+    /* background-color: aqua; */
+    display: flex;
+    place-content: center;
+    
+}
+
+
+#start div{
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    width: 13vw;
+    height: 5vh;
+    padding: 10px;
+    font-size: x-large;
+    color: rgb(151, 148, 148);
+    filter: brightness(20);
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 1.95px 1.95px 2.6px;
+    /* background: linear-gradient(-45deg, rgb(243, 45, 253) 0%, rgb(34, 192, 195) 100%);    background: rgba(255, 255, 255, 0.2); */
+}
+
+button{
+    border: 0px black solid;
+}
+
+@keyframes transform{
+    form{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    to{
+        width: 30vw;
+        height: 25vh;
+    }
+}
+
+#select{
+    /* border: #000 1px solid; */
+    /* background-color: blue; */
+    width: 100vw;
+    /* background-color: #000; */
+    display: flex;
+    place-content: center;
+    margin-top: -0vh;
+    animation: 1.5s forwards;
+    
+}
+
+#select li{
+    list-style-type: none;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    place-content: center;
+    margin-bottom: 10vh;
+    font-size: x-large;
+    /* border: 1px solid black; */
+    
+    
+    
+}
+
+#select li img{
+    width: 4vw;
+    margin-left: 1vw;
+    
+    
+}
+
+.line{
+    border: 3.6px solid #000;
+    height: 0vh;
+    /* position: absolute; */
+    left: 50%;
+    margin-left: -14.3vw;
+    z-index: 1;
+    margin-top: 5vh;
+    animation: 2s 2s forwards;
+    
+}
+
+
+@keyframes line{
+    from {
+        height: 0vh;
+    }
+
+    to{
+        height: 43vh;
+    }
+}
+
+@keyframes Animelist{
+    0%{
+        width: 100vw;
+    }
+
+    100%{
+        width: 11vw;
+    }
+}
+
+#selected{
+    margin-top: -14vh;
+    margin-left: 17vw;
+    width: 70vw;
+    height: 85vh;
+    background-color: #f1e9e9cc;
+    display: flex;
+    /* place-content: center; */
+    align-content: space-between;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.35) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.45) 0px -2px 6px 0px inset;
+    /* z-index: 20; */
+}
+
+/* ///////////////////////////////////////
+///////////////////////////////////////
+/////////////////////////////////////// */
+
+.Tic-tac{
+    width: 40vw;
+    height: 81vh;
+    background: black;
+    display: grid;
+    z-index: 10;
+    position: relative;
+    pointer-events: none;
+    opacity: 0.3;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.col{
+    width: 40vw;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    
+
+}
+
+.coll .row{
+    margin-top: 0.5vh;
+    height: 27vh;
+    /* background-color: #000; */
+}
+
+
+.colll .row{
+    margin-top: 0.5vh;
+    height: 27vh;
+    /* background-color: #000; */
+}
+
+
+
+.row{
+    width: 13.15vw;
+    height: 26vh;
+    background-color: white;
+    display: grid;
+    place-content: center;
+}
+
+.rowP1{
+    width: 13.15vw;
+    height: 26vh;
+    background-color: aqua;
+    display: grid;
+    place-content: center;
+}
+
+.rowP2{
+    width: 13.15vw;
+    height: 26vh;
+    background-color: Yellow;
+    display: grid;
+    place-content: center;
+}
+
+.imgg{
+    opacity: 0;
+}
+
+.row img{
+    width: 13vw;
+    /* height: 26vh; */
+}
+
+.multiplayer{
+    margin-top: 7vh;
+    width: 30vw;
+    height: 50vh;
+    background-color: rgba(127, 255, 212, 0);
+    display: grid;
+    place-content: center;
+    z-index: 13;
+    position: relative;
+    /* margin-left: 10vw; */
+
+}
+
+.player img{
+    width: 7vw;
+    float: left;
+    /* border: #000 solid 2px; */
+    margin-left: 2vw;
+    z-index: 400;
+}
+
+.div{
+    width: 12vw;
+    height: 15vh;
+    /* border: 1px solid black; */
+}
+
+.DIV{
+    width: 30vw;
+    /* margin-left: 15vw; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.label{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+#div1{
+    border: 5px aqua solid;
+}
+
+#div2{
+    background-color: rgba(156, 151, 151, 0.582);
+    opacity: 0.3;
+}
+
+.Tic-tac{
+    z-index: -1;
+}
+
+#l-three:hover .information{
+    display: block;
+}
+
+.information{
+    width: 40vw;
+    height: 60vh;
+    background: #000;
+    margin-top: -57vh;
+    margin-left: 55vw;
+    position: absolute;
+    color: aqua;
+    font-size: x-large;
+     display: grid;
+    place-content: center;
+    padding: 10px;
+    border-radius: 20px;
+    display: none;
+    /* background-image: url(/eve2.png); */
+}
+
+.pp{
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-top: 27vh;
+}
+
+a{
+    color: aqua;
+}
+
+.xc{
+    position: absolute;
+    width: 40vw;
+    height: 60vh;
+   opacity: 0.5;
+}
+
+
+
+.topic{
+    width: 30vw;
+    display: grid;
+    place-content: center;
+}
+
+.xImg{
+    display: none;
+}
+
+.shift{
+    margin-top: 2vh;
+}
+
+.fa-repeat{
+    margin-top: 5vh;
+}
+
+.list .divv{
+    /* background-color: grey; */
+    /* opacity: 0.9; */
+    filter: grayscale();
+}
+
+.l-two img, .l-three img{
+    filter: grayscale();
+}
+
+.l-two span, .l-three span{
+    /* filter: grayscale(); */
+    opacity: 0.8;
+}
+
+#wLine{
+    display: none;
+    position: absolute;
+    width: 1vw;
+    background-color: #000;
+    /* transform: rotate(-45deg); */
+    margin-top: -10vh;
+    left: 50%;
+    top: 0%;    
+    animation: wLine 1.5s forwards;
+
+}
+
+#wLine2{
+    display: none;
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    background-color: black;
+    top: 15%;    
+    animation: wLine2 1.5s forwards;
+    margin-left: -5vw;
+}
+
+#wLine3{
+    display: none;
+    position: absolute;
+    width: 1vw;
+    height: 1vh;
+    transform: rotate(-45deg);
+    left: 50%;
+    top: -10%;
+    background-color: black;    
+    animation: wLine3 1.5s forwards;
+}
+
+#score-board{
+    animation: 1.2s;
+}
+
+@keyframes scale{
+    from{
+        scale: 1;
+    }
+
+    to{
+        scale: 2;
+    }
+}
+
+
+@keyframes wLine3 {
+    0%{
+        height: 1vh;
+    }
+
+    100%{
+        height: 100vh;
+    }
+}
+
+
+@keyframes wLine {
+    0%{
+        height: 1vh;
+    }
+
+    100%{
+        height: 105vh;
+    }
+}
+
+@keyframes wLine2 {
+    0%{
+        width: 1vw;
+    }
+
+    100%{
+        width: 50vw;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .line{
+        border: 2.5px solid #000;
+        margin-left: -15.5vw;
+        margin-top: 6.5vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .line{
+        border: 2.5px solid #000;
+        margin-left: -16.6vw;
+        margin-top: 6.95vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .line{
+        border: 2.5px solid #000;
+        margin-left: -17vw;
+        margin-top: 6.7vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    body{
+        background: #fff;
+        /* width: 90vw; */
+    }
+
+    .forMobile{
+        display: grid;
+        place-content: center;
+        width: 100vw;
+        height: 100vh;
+        /* background: linear-gradient(180deg, rgba(243, 45, 253, 0.822) 0%, rgba(34, 192, 195, 0.733) 100%);; */
+        position: absolute;
+        overflow: hidden;
+        font-family: 'Courier New', Courier, monospace;
+        /* margin-top: -10vh; */
+        
+    }
+
+
+    .forMobile h2{
+        width: 95vw;
+        display: grid;
+        place-content: center;
+    }
+
+    .gifDiv{
+        width: 100vw;
+        display: grid;
+        place-content: center;
+    }
+    .gifDiv img{
+        width: 50vw;
+
+    }
+
+    #root{
+        display: none;
+    }
+}

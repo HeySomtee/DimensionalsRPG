@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensionals</title>
+    <!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+
+    // Download this from the link above 
+    <script src="jquery.ui.touch-punch.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="display: none;">
+        <img src="/eve.png"  id="eveRef">
+        <img src="/eve1.png" id="eveRef1">
+        <img src="/eve2.png" id="eveRef2">
+    </div>
+
+    <!-- <div class="show"> -->
+        <div id="forMobile" class="forMobile">
+            <h2>Please rotate your screen for the best expirence</h2>
+            <div class="gifDiv">
+                <img src="/rotategif.gif" alt="">
+            </div> 
+        </div>
+    <!-- </div> -->
+    
+    <div id="root">
+        <div id="loadScreen">
+    
+        </div>
+
+        <div id="header">
+            <img id="logo" class="logo" src="logo.webp" alt="">
+            <div  id="start">
+                <div>Start</div>
+            </div>
+        </div>
+
+        <div class="main" id="main">
+            
+            <div id="select">
+                <div style="z-index: 2;">
+                    <ul id="ul">
+                        <li class="list l-one" id="l-one">
+                            <img src="/button.png" alt=""><span>Tic-tac</span> 
+                            <img src="/tictac-gif.gif" alt="">
+                        </li>
+
+                        <li class="list l-two" id="l-two">
+                            <img src="/button.png" alt=""><span>Puzzle_</span>
+                            <img src="/200w.gif" alt="">
+                        </li>
+
+                        <li class="list l-three" id="l-three">
+                            <img style="filter: grayscale(0);" src="/button.png" alt=""><span>Info__*</span>
+                            <img src="/info-icon.png" alt=""> 
+                            <div class="information">
+                                <img class="xc" style="width: 40vw; margin-left: 2vw; filter: grayscale(0);" src="/eve2.png">
+                                our loyal robot mascot, is your ticket to accessing exclusive channels, products, and events in our franchise. Apply for the Eve whitelist now and unlock the full potential of the Dimensionals community!
+                                 <br> <br>
+                                <p class="pp">learn more about us, visit <a href="https://www.dimensionals.com/eve" target="_blank" rel="noopener noreferrer">https://www.dimensionals.com/eve</a></p>
+                            </div>
+                        </li>
+
+                        <!-- <li class="list l-four" id="l-four">
+                            <img src="/button.png" alt=""><span>Info*__</span>
+                            <img class="infoGif" src="/info-gif.gif" alt="">
+                        </li> -->
+
+                    </ul>
+                </div>
+                <div id="line" class="line"></div>
+            </div>
+    
+            <div id="selected">
+             <div class="shift">
+                <div class="Tic-tac" id="Tic-tac">
+                    <div class="col">
+                        <div class="wLine" id="wLine"></div>
+                        <div class="wLine" id="wLine2"></div>
+                        <div class="wLine" id="wLine3"></div>
+                        <button   class="row"><img id="row1" class="imgg" src="/eve.png" alt=""></button>
+                        <button   class="row"><img id="row2" class="imgg" src="/eve.png"  alt=""></button>
+                        <button   class="row"><img id="row3" class="imgg" src="/eve.png"  alt=""> </button>
+                    </div>
+
+                    <div class="col coll">
+                        <button  class="row"><img id="row4" class="imgg" src="/eve.png"  alt=""></button>
+                        <button  class="row"><img id="row5" class="imgg"  src="/eve.png" alt=""></button>
+                        <button  class="row"><img id="row6" class="imgg" src="/eve.png"  alt=""></button>
+                    </div>
+
+                    <div class="col colll" >
+                        <button  class="row"><img id="row7" class="imgg" src="/eve.png"  alt=""></button>
+                        <button  class="row"><img id="row8" class="imgg" src="/eve.png" alt=""></button>
+                        <button  class="row"><img id="row9" class="imgg" src="/eve.png"  alt=""></button>
+                    </div>
+                </div>
+             </div>
+                
+                <div class="multiplayer">
+                    <div class="player p-one">
+                        <div class="topic"><h1>SELECT PlAYER</h1></div> <br> <br>
+                        <div class="label">
+                            <span>Player1</span>
+                            <span>Player2</span>
+                        </div>
+
+                        <div class="DIV">
+                            
+                            <div class="div" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><img class="xImg" src="/eve1.png" alt=""></div>
+                            <div id="score-board"><span id="Player1-score">0 </span> : <span id="Player2-score"> 0</span></div>
+                            <div class="div" id="div2" ondrop="drop(event)" ondragover="/*allowDrop(event)*/"><img class="xImg" id="src" src="" alt=""></div>
+                        </div>
+
+                        <img draggable="true" id="drag1" src="/eve1.png" ondragstart="drag(event)"  alt="">
+                        <img draggable="false" id="drag2" ondragstart="drag(event)" src="eve2.png" alt="">
+                        <br>
+                       
+                        <div style="width: 30vw; display: grid; place-content: center;">
+                            <div id="a" onclick="reset()" onclick="scaleFunc()"><i class="fa-solid fa-repeat" style="color: #16188d; font-size: x-large;"></i></div>
+                        </div>
+
+    
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
