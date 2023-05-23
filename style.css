@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+/* *{
+    border: #000 solid 1px;
+} */
+
 body{
     margin: 0%;
     overflow: hidden;
@@ -305,9 +309,7 @@ button{
     opacity: 0.3;
 }
 
-.Tic-tac{
-    z-index: -1;
-}
+
 
 #l-three:hover .information{
     display: block;
@@ -317,8 +319,8 @@ button{
     width: 40vw;
     height: 60vh;
     background: #000;
-    margin-top: -57vh;
-    margin-left: 55vw;
+    margin-top: -15vh;
+    margin-left: 20vw;
     position: absolute;
     color: aqua;
     font-size: x-large;

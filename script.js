@@ -6,6 +6,18 @@ const lists = document.querySelectorAll('.list');
 const eveRef = document.getElementById("eveRef");
 const eveRef1 = document.getElementById("eveRef1");
 const eveRef2 = document.getElementById("eveRef2");
+const l_three = document.getElementById("l-three");
+const infoBox = document.getElementById("information");
+
+let boxCount = 0
+l_three.addEventListener("click", () =>{
+  boxCount++ ;
+  if (boxCount % 2 != 0) {
+    infoBox.setAttribute("style", "display:block;")
+  } else if(boxCount%2 == 0) {
+    infoBox.setAttribute("style", "display: none;")
+  }
+})
 
 
 
